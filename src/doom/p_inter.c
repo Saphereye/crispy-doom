@@ -37,7 +37,7 @@
 
 #include "p_inter.h"
 
-#include "../commandshelper.h"
+#include "g_commandshelper.h"
 
 
 #define BONUSADD 6
@@ -853,7 +853,7 @@ void P_DamageMobj(mobj_t *target, mobj_t *inflictor, mobj_t *source, int damage)
     // player specific
     if (player)
     {
-        CALLFUNCTION("player");
+        G_CALLFUNCTION("player");
 
         // end of game hell hack
         if (target->subsector->sector->special == 11 &&
