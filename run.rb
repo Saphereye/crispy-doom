@@ -22,4 +22,5 @@ run_command("make -j#{cores}")
 
 puts "Running crispy-doom..."
 # Run crisp-doom-setup to change config using GUI
+# NEVER use sudo here
 run_command("./src/crispy-doom -iwad #{iwad_path}")

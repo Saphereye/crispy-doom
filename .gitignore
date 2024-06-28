@@ -28,6 +28,7 @@ DOOM*.pcx
 HTIC*.pcx
 HEXEN*.pcx
 STRIFE*.pcx
+./script.log
 
 # CMake-specific ignores
 /.vs

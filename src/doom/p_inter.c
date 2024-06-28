@@ -719,6 +719,7 @@ void P_KillMobj(mobj_t *source, mobj_t *target)
 
     if (target->player)
     {
+        G_CALLFUNCTION("player");
         // count environment kills against you
         if (!source)
             target->player->frags[target->player - players]++;
