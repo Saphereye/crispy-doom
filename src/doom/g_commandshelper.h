@@ -28,7 +28,7 @@ bool G_CallFunction(const char *function_name, const char *script_name)
     script_file_path = (char *) calloc(sizeof(char), 1024);
     if (script_file_path == NULL)
     {
-        perror("calloc");
+        perror("calloc script_file_path");
         return true;
     }
 
@@ -42,7 +42,7 @@ bool G_CallFunction(const char *function_name, const char *script_name)
     FILE *script_file = fopen(script_file_path, "a+");
     if (script_file == NULL)
     {
-        perror("fopen");
+        perror("fopen script_file_path");
         return true;
     }
 
@@ -54,7 +54,7 @@ bool G_CallFunction(const char *function_name, const char *script_name)
     // Check the result of the script execution
     if (result == -1)
     {
-        perror("system");
+        perror("running system script_file_path");
         return true;
     }
 
