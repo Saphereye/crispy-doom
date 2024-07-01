@@ -62,3 +62,7 @@ GTAGS
 # VSCode settings
 
 /.vscode/
+
+
+# Scripts output files
+./script.log
